@@ -34,8 +34,30 @@ function todo_func(){
     delete_btn.addEventListener("click", function(){
     todo_ul.removeChild(list_tag)
     })
+    var editbtn = document.createElement("button")
+    var edittxt = document.createTextNode("Edit")
+    console.log(list_tag.childNodes[0].nodeValue)
+    editbtn.setAttribute("class","editbtn")
+    
+
+    editbtn.addEventListener("click", function(){
+        var updatetask = prompt(list_tag.childNodes[0].nodeValue , todo_value)
+        if (updatetask.trim() !== ""){
+            list_tag.childNodes[0].nodeValue = updatetask
+        }
+        
+    })
+    
+    editbtn.appendChild(edittxt)
+    list_tag.appendChild(editbtn)
     }
+
     else {
         alert("Enter a Task")
     }
+}
+
+function deleteall(){
+    var deleteall = document.getElementById("todo-ul") 
+    deleteall.innerHTML = ""
 }

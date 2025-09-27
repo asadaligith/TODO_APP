@@ -7,7 +7,7 @@ body{
 }
 
 #main-section{
-   width: 400px;
+   width: 500px;
    height: auto;
    background-color: white;
    display: flex;
@@ -30,6 +30,16 @@ body{
     font-weight: bold;
 }
 
+#dltall{
+    background-color: black;
+    color: white;
+    border: none;
+    font-size: 16px;
+    padding: 12px 24px;
+    border-radius: 8px;
+    cursor: pointer;
+    font-weight: bold;
+}
 
 #todo-div > input {
   padding: 12px;
@@ -48,21 +58,39 @@ body{
   color: #aaa;
   font-style: italic;
 }
+#ul-div{
+  width: 500px;
+}
 
 #todo-ul>li{
-  list-style: none;
-  font-size: 20px;
-  margin-bottom: 10px;
+  list-style-type: none;
+  font-size: 24px;
+  display: flex;
+  justify-content: space-around;
+  margin-bottom: 20px;
 }
 .delete-btn{
   background-color: rgb(250, 65, 65);
     color: white;
     border: none;
-    font-size: 12px;
+    font-size: 14px;
     padding: 8px 16px;
     border-radius: 8px;
     cursor: pointer;
     font-weight: bold;
-    margin-left: 5px;
+   
+
+}
+
+.editbtn{
+  background-color: rgb(173, 168, 168);
+    color: white;
+    border: none;
+    font-size: 14px;
+    padding: 8px 16px;
+    border-radius: 8px;
+    cursor: pointer;
+    font-weight: bold;
+
 
 }
